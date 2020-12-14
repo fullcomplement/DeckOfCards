@@ -5,7 +5,16 @@ class Main {
   static int pos_in_deck =0;
 
   public static void main(String[] args) {
-    run();
+    
+    Card c1 = new Card("Ace", "Diamonds", 1);
+    Card c2 = new Card("King", "Spaces", 10);
+    Card c3 = new Card("Two", "Diamonds", 2);
+    System.out.println(c1);
+    System.out.println(c1.getValue() + c2.getValue());
+    //run();
+
+    Deck d1 = new Deck();
+    d1.displayCards();
   }
 
   public static void run() {
